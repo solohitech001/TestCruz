@@ -63,7 +63,7 @@ app.use((req, res, next) => {
   currentWorker = (currentWorker + 1) % numWorkers;
 });
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 2000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
