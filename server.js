@@ -20,7 +20,7 @@ const myMiddleware = (req, res, next) => {
 const app = express();
 app.use(myMiddleware);
 
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 // Serve files from the 'uploads' directory
 app.use('/uploads', express.static('uploads'));
@@ -46,7 +46,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Fallback route
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 const numWorkers = 4;
