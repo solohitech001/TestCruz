@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "majikserver",
+			"path": "."
+		},
+		{
+			"name": "build",
+			"path": "../magikworld/build"
+		}
+	],
+	"settings": {}
+}
